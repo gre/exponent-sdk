@@ -1,0 +1,15 @@
+{
+  "name": "glgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "download-idl": "wget https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
+    "gen-js": "node genjs.js 1> ../src/generated/gl.js"
+  },
+  "author": "Gaëtan Renaudeau",
+  "license": "ISC",
+  "dependencies": {
+    "webidl2": "^2.0.11"
+  }
+}
